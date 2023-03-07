@@ -1,4 +1,5 @@
 import styles from './Hero.module.css'
+import { StyledForm } from './styles'
 
 const Hero = () => (
   <form className={styles.form}>
