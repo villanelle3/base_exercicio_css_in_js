@@ -8,20 +8,27 @@ export const StyledForm = styled.form`
   position: relative;
   display: flex;
   align-items: center;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-principal);
+    content: '';
+    opacity: 0.7;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 24px 0;
+  }
 `
-
-export const StyledButton = styled.button`
-  background-color: var(--cor-principal);
-  border: 1px solid var(--cor-principal);
-  height: 40px;
-  padding: 0 16px;
-  font-size: 18px;
-  color: var(--cor-secundaria);
-  margin-left: 8px;
-  cursor: pointer;
-`
-
-export const Styledinput = styled.input`
-  padding: 0 16px;
-  outline-color: var(--cor-principal);
+export const StyledheroTitle = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
+  color: #eee;
+  position: relative;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `
